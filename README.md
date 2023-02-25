@@ -1,2 +1,2 @@
-# SQL_Toutorial
+# SQL Tutorial
 SQL fundamentals with postgres
