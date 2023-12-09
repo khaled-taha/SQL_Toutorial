@@ -14,6 +14,12 @@ SELECT * FROM books;
 SELECT title FROM books;
 ```
 
+* Select titles and publish years of books
+```roomsql
+SELECT title, pub_year
+FROM books;
+```
+
 ### Selecting DISTINCT Records
 
 * Select unique authors from the books table
@@ -28,6 +34,11 @@ FROM books;
 ```
 ### Aliasing: rename the column
 
+* Alias author so that it becomes authors
+```roomsql
+SELECT author AS authors
+FROM books;
+```
 * Alias author so that it becomes unique_author
 ```roomsql
 SELECT DISTINCT author AS unique_author
@@ -60,9 +71,15 @@ SELECT genre FROM books
 LIMIT 10
 ```
 
+```roomsql
+SELECT DISTINCT genre AS genre_of_book
+FROM books
+LIMIT 10;
+```
+
 - Select the first 10 genres from books using SQL Server
 ```roomsql
 SELECT genre FROM books
-TOP 10
+TOP 10;
 ```
 
