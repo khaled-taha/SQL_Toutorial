@@ -6,9 +6,8 @@
 
 ### COUNT() function
 
-The COUNT function lets us count something from our table by returning the number of records with a value in a field.
-
-This function doesn't count the null values
+The COUNT function lets us count something from our table by returning the number of records with a value in a field
+including duplicated values and NULL values
 
 Example:
 
