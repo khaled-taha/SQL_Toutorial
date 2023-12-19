@@ -6,13 +6,13 @@
 CREATE TABLE films (
   id integer,
   title varchar(86),
-  release_year varchar(4),
+  release_year INTEGER,
   country varchar(20),
-  duration varchar(3),
+  duration NUMERIC,
   language varchar(10),
   certification varchar(9),
-  gross varchar(9),
-  budget varchar(11)
+  gross BIGINT,
+  budget BIGINT
 );
 --
 -- Dumping data for table `films`

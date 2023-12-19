@@ -11,8 +11,8 @@ WHERE <Condition>
 
 To do this, we will be using comparison operators.
 
-- ```>```  Greater than or a/er
-- ```<```  Less than or before
+- ```>```  Greater than
+- ```<```  Less than
 - ```=```  Equal to
 - ```>=``` Greater than or equal to
 - ```<=``` Less than or equal to
@@ -88,7 +88,7 @@ WHERE language = 'German'
 	AND release_year < 2010;
 ```
 
-8 - Find the title and year of films from the 1990 or 1999
+8 - Find the title and year of films in 1990 or 1999
 
 ```roomsql
 SELECT title, release_year
@@ -121,6 +121,20 @@ FROM people
 WHERE name LIKE '_r%'
 ```
 
+* Select the names that start with _
+```roomsql
+SELECT *
+FROM films
+WHERE title LIKE '\_%';
+```
+
+OR using any escape character, but using ESCAPE keyword
+
+```roomsql
+SELECT *
+FROM films
+WHERE title LIKE '._%' ESCAPE '.';
+```
 12 - Select names that don't start with A
 
 ```roomsql
@@ -183,7 +197,7 @@ WHERE release_year BETWEEN 1990 AND 1999
 - ```NULL``` values are missing values
 - Very common
 - ```COUNT(field_name)``` includes only non-missing values.
-- ```COUNT(*) includes``` includes missing and non-missing values.
+- ```COUNT(*)``` includes missing and non-missing values.
 - Use ```IS NULL``` or ```IS NOT NULL``` to:
     * Identify missing values
     * Select missing values

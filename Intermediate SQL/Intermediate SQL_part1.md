@@ -7,7 +7,11 @@
 ### COUNT() function
 
 The COUNT function lets us count something from our table by returning the number of records with a value in a field
-including duplicated values and NULL values
+including <b> duplicated values and NULL values</b>
+
+```COUNT(field_name)``` includes only non-missing values.
+
+```COUNT(*)``` includes missing and non-missing values.
 
 Example:
 
