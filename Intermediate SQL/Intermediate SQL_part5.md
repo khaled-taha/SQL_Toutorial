@@ -1,4 +1,4 @@
-# Intermediate SQL Part 4 : Summarizing grouping.
+# Intermediate SQL Part 5 : Summarizing grouping.
 
 ## grouping with ```GROUP BY``` keyword: we'll often need to summarize data for a particular group of results.
 

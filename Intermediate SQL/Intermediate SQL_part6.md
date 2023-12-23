@@ -1,4 +1,4 @@
-# Intermediate SQL Part 4 : HAVING with GROUP BY (Filtering grouped data)
+# Intermediate SQL Part 6 : HAVING with GROUP BY (Filtering grouped data)
 
 ## In SQL, we can't filter aggregate functions with WHERE clauses.
 
